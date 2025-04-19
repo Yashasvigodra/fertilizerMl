@@ -216,6 +216,8 @@ body::before {
     
     <div class="container">
         <h2>Fertilizer Recommendation System</h2>
+        <h4>Select Language</h4>
+        <div id="google_translate_element"></div>
         
         <form id="fertilizerForm">
             <div class="section-title">Soil Nutrients</div>
@@ -343,6 +345,16 @@ body::before {
                 resultElement.style.borderLeft = '4px solid #d32f2f';
             }
         });
-    </script>
+        <script src="script.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+          {pageLanguage: 'en'},
+          'google_translate_element'
+      );
+  } 
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   
 </body>
 </html>
